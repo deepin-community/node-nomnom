@@ -1,0 +1,31 @@
+Source: node-nomnom
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders:
+ Mathias Behrle <mbehrle@debian.org>,
+Section: web
+Priority: optional
+Build-Depends:
+ debhelper (>= 9),
+ nodejs,
+Standards-Version: 3.9.8
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-javascript/node-nomnom.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-javascript/node-nomnom.git
+Homepage: https://github.com/harthur/nomnom
+
+Package: node-nomnom
+Architecture: all
+Depends:
+ node-chalk,
+ node-underscore,
+ nodejs,
+ ${misc:Depends},
+Description: Option parser with generated usage and commands for Node.js
+ nomnom is an option parser for Node.js. It noms your args and gives them
+ back to you in a hash.
+ .
+ Nomnom supports args like -d, --debug, --no-debug, --file=test.txt,
+ --file test.txt, -f test.txt, -xvf, and positionals. Positionals are
+ arguments that don't fit the -a or --atomic format and aren't attached
+ to an option.
+ .
+ Node.js is an event-based server-side JavaScript engine.

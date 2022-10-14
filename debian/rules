@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@
+
+# Tests cannot be run until nodeunit packaged
+#override_dh_auto_test:
+	#nodeunit test/*.js
+
+

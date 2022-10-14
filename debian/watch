@@ -1,0 +1,11 @@
+version=3
+# This watch file uses fakeupstream. This is because there are no
+# tags or releases on the github source repository.
+# Origin url: https://github.com/harthur/nomnom
+# Take a look at https://wiki.debian.org/debian/watch/
+# See also fakeupstream: http://anonscm.debian.org/viewvc/qa/trunk/cgi-bin/fakeupstream.cgi?view=markup
+opts=\
+dversionmangle=s/\+(debian|dfsg|ds|deb)(\.\d+)?$//,\
+filenamemangle=s/.*=// \
+http://qa.debian.org/cgi-bin/fakeupstream.cgi?upstream=npmjs/nomnom \
+.*=nomnom-(\d.*)\.(?:tgz|tar\.(?:gz|bz2|xz))

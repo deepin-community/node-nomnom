@@ -1,0 +1,29 @@
+node-nomnom (1.8.1-1.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Tue, 29 Dec 2020 02:37:44 +0100
+
+node-nomnom (1.8.1-1) unstable; urgency=low
+
+  [ Bas Couwenberg ]
+  * Initial release (Closes: #774567)
+  * Remove myself from Uploaders.
+
+  [ Ross Gammon ]
+  * Update control file and add myself as uploader
+  * Always sign tags
+  * Explain the use of fakeupstream
+  * Fix underscore package name
+  * Remove build target & add comment to test target in debian/rules
+
+  [ Mathias Behrle ]
+  * Removing unused Build-Dependencies.
+  * Updating to Standards-Version 3.9.8, no changes needed.
+  * Removing versioned Depends.
+  * Putting myself in Uploaders according to #774567.
+  * Adding myself to debian copyright.
+  * Running wrap-and-sort -sta.
+
+ -- Mathias Behrle <mbehrle@debian.org>  Mon, 18 Jul 2016 18:54:39 +0200
