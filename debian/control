@@ -1,24 +1,24 @@
 Source: node-nomnom
-Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
-Uploaders:
- Mathias Behrle <mbehrle@debian.org>,
-Section: web
+Section: javascript
 Priority: optional
-Build-Depends:
- debhelper (>= 9),
- nodejs,
-Standards-Version: 3.9.8
-Vcs-Browser: https://anonscm.debian.org/cgit/pkg-javascript/node-nomnom.git
-Vcs-Git: https://anonscm.debian.org/git/pkg-javascript/node-nomnom.git
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Mathias Behrle <mbehrle@debian.org>
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , nodeunit <!nocheck>
+ , node-underscore <!nocheck>
+Standards-Version: 4.6.1
+Vcs-Browser: https://salsa.debian.org/js-team/node-nomnom
+Vcs-Git: https://salsa.debian.org/js-team/node-nomnom.git
 Homepage: https://github.com/harthur/nomnom
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
 
 Package: node-nomnom
 Architecture: all
-Depends:
- node-chalk,
- node-underscore,
- nodejs,
- ${misc:Depends},
+Depends: node-chalk
+ , node-underscore
+ , ${misc:Depends}
 Description: Option parser with generated usage and commands for Node.js
  nomnom is an option parser for Node.js. It noms your args and gives them
  back to you in a hash.

@@ -6,9 +6,3 @@
 
 %:
 	dh $@
-
-# Tests cannot be run until nodeunit packaged
-#override_dh_auto_test:
-	#nodeunit test/*.js
-
-
